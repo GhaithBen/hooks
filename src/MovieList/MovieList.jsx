@@ -2,10 +2,10 @@ import React from "react";
 import MovieCard from "../Components/MovieCard/MovieCard";
 import "./MovieList.css";
 
-function MovieList({ myMoviesList, rateSearch, titleSearch }) {
+function MovieList({ moviesData, rateSearch, titleSearch }) {
     return (
         <div className="moviesList">
-            {myMoviesList
+            {moviesData
                 .filter(
                     (element) =>
                         element.rate >= rateSearch &&

@@ -14,12 +14,12 @@ function AddMovie({ getNewMovie }) {
     return (
         <>
             <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
+                Add Movie
             </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>Add Your Movie</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="inputnewMovie">
                     <Form.Control
@@ -27,7 +27,7 @@ function AddMovie({ getNewMovie }) {
                         placeholder="Enter Title..."
                         name="title"
                         onChange={(e) =>
-                            setNewMovie({ ...newMovie, Title: e.target.value })
+                            setNewMovie({ ...newMovie, title: e.target.value })
                         }
                     />
                     <Form.Control

@@ -93,7 +93,7 @@ function App() {
             </div>
             <div className="MovieList">
                 <MovieList
-                    myMoviesList={movies}
+                    moviesData={movies}
                     rateSearch={rateSearch}
                     titleSearch={titleSearch}
                 />
